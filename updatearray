@@ -1,0 +1,32 @@
+import java.util.*;
+class updatearray
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter n value");
+int n=sc.nextInt();
+ArrayList<Integer> a=new ArrayList<Integer>();
+System.out.println("enter elements");
+for(int i=0;i<n;i++)
+{
+a.add(sc.nextInt());
+}
+System.out.println("Enter value in array,value to update");
+int p=sc.nextInt(); 
+int k=sc.nextInt();
+if(a.contains(p))
+{
+int s=a.indexOf(p);
+a.set(s,k);
+for(Integer i:a)
+{
+System.out.print( i+" ");
+}
+}
+else
+{
+System.out.println("False");
+}
+}
+}
